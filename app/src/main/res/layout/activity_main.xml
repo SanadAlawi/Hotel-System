@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="AMA Hotel"
+        android:textColor="#FAF7F7"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="304dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/hotel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mainActivity_btn_login"
+            style="@style/Bstyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:onClick="Login"
+            android:text="Login"
+            app:cornerRadius="90dp"
+            />
+
+        <Button
+            android:id="@+id/mainActivity_btn_signup"
+            style="@style/Bstyle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:onClick="SignUp"
+            android:text="Sign Up"
+            app:cornerRadius="90dp"
+            />
+    </LinearLayout>
+</LinearLayout>

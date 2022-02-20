@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <resources>
+    <style name="LLstyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#9e6027</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SVstyle" >
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">#6c411a</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+        <style name="Bstyle" >
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">75dp</item>
+            <item name="android:layout_marginLeft">60dp</item>
+            <item name="android:layout_marginTop">20dp</item>
+            <item name="android:layout_marginRight">60dp</item>
+            <item name="android:backgroundTint">#35200c</item>
+            <item name="android:textColor">#FBFBFB</item>
+            <item name="android:textSize">18sp</item>
+
+        </style>
+    <style name="LOGTVstyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">#FFFEFE</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LOGETstyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#FAF9F9</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:ems">14</item>
+
+    </style>
+
+
+    <style name="b" >
+    </style>
+
+
+
+    <style name="c" >
+    </style>
+
+
+    <style name="d" >
+    </style>
+
+    </resources>
+

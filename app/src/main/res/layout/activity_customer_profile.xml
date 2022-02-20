@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerProfileActivity"
+    android:columnCount="2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="16dp"
+    style="@style/LLstyle">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:srcCompat="@drawable/customer_profile_icon_148392363_removebg_preview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/customerProfileActivity_tv_name"
+        android:text="@string/name"
+        style="@style/LOGTVstyle"/>
+
+        <EditText
+            android:id="@+id/customerProfileActivity_et_name"
+            style="@style/LOGETstyle"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/customerProfileActivity_et_username"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/customerProfileActivity_tv_username"
+        android:text="@string/username"
+        style="@style/LOGTVstyle"/>
+
+        <EditText
+            android:id="@+id/customerProfileActivity_et_username"
+            style="@style/LOGETstyle"
+            android:drawableStart="@drawable/ic_person"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/customerProfileActivity_et_Address"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/customerProfileActivity_tv_Address"
+        android:text="@string/address"
+        style="@style/LOGTVstyle"/>
+
+        <EditText
+            android:id="@+id/customerProfileActivity_et_Address"
+            style="@style/LOGETstyle"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/customerProfileActivity_et_phone"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/customerProfileActivity_tv_phone"
+        android:text="@string/phone"
+        style="@style/LOGTVstyle"/>
+
+    <EditText
+        android:id="@+id/customerProfileActivity_et_phone"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/customerProfileActivity_et_email"
+        style="@style/LOGETstyle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/customerProfileActivity_tv_email"
+        android:text="@string/email"
+        style="@style/LOGTVstyle"/>
+    <EditText
+        android:id="@+id/customerProfileActivity_et_email"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_email"
+        style="@style/LOGETstyle"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/Bstyle"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="40dp"
+
+        android:onClick="EditUser"
+        android:text="@string/edit"
+        app:cornerRadius="90dp" />
+
+    <ProgressBar
+        android:id="@+id/customerProfileActivity_pb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2"/>
+
+</LinearLayout>

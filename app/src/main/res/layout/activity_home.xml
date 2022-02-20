@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LLstyle"
+    tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/SVstyle"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp">
+
+            <Button
+                android:id="@+id/homeActivity_btn_reservedRoom"
+                style="@style/Bstyle"
+                android:onClick="reservedActivity"
+                android:text="@string/my_rooms"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_rooms"
+                style="@style/Bstyle"
+                android:onClick="RoomsActivity"
+                android:text="@string/rooms_reserve"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_hotelInformation"
+                style="@style/Bstyle"
+                android:onClick="HotelActivity"
+                android:text="@string/hotel_information_title"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_customerProfile"
+                style="@style/Bstyle"
+                android:onClick="CustomerActivity"
+                android:text="@string/customer_profile"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_touristAreas"
+                style="@style/Bstyle"
+                android:onClick="CurrencyConverter"
+                android:text="@string/currency_converter"
+                app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/homeActivity_btn_fav"
+                style="@style/Bstyle"
+                android:layout_marginBottom="80dp"
+                android:onClick="FavoriteActivity"
+                android:text="@string/favorites"
+                app:cornerRadius="90dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ReceptionistActivity"
+    style="@style/LLstyle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/SVstyle">
+    <Button
+        android:id="@+id/receptionistActivity_btn_suiteRoom"
+        style="@style/Bstyle"
+        android:onClick="SuiteRoom"
+        android:text="@string/suite"
+        app:cornerRadius="90dp" />
+
+    <Button
+        android:id="@+id/receptionistActivity_btn_normalRoom"
+        style="@style/Bstyle"
+        android:onClick="NormalRoom"
+        android:text="@string/room"
+        app:cornerRadius="90dp" />
+
+            <Button
+                android:id="@+id/receptionistActivity_btn_orders"
+                style="@style/Bstyle"
+                android:layout_marginBottom="80dp"
+                android:onClick="Orders"
+                android:text="@string/order"
+                app:cornerRadius="90dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

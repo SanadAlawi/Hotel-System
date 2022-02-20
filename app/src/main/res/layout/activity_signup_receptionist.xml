@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupReceptionistActivity"
+    style="@style/LLstyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_name"
+            style="@style/LOGTVstyle"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_name"
+            style="@style/LOGETstyle"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_Address"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_Address"
+            style="@style/LOGTVstyle"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_Address"
+            style="@style/LOGETstyle"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_phone"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_phone"
+            style="@style/LOGTVstyle"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_phone"
+            style="@style/LOGETstyle"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_email"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_email"
+            style="@style/LOGTVstyle"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_email"
+            style="@style/LOGETstyle"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="@string/receptionist_com"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_username"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_username"
+            style="@style/LOGTVstyle"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_username"
+            style="@style/LOGETstyle"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:hint="@string/receptionist"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_password"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_password"
+            style="@style/LOGTVstyle"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_password"
+            style="@style/LOGETstyle"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_repeatPassword"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_repeatPassword"
+            style="@style/LOGTVstyle"
+            android:text="@string/repeatPwd" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_repeatPassword"
+            style="@style/LOGETstyle"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_salary"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_salary"
+            style="@style/LOGTVstyle"
+            android:text="@string/salary" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_salary"
+            style="@style/LOGETstyle"
+            android:inputType="number"
+            android:nextFocusDown="@+id/signupReceptionistActivity_et_hourWork"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_hourWork"
+            style="@style/LOGTVstyle"
+            android:text="@string/hour_work" />
+
+        <EditText
+            android:id="@+id/signupReceptionistActivity_et_hourWork"
+            style="@style/LOGETstyle"
+            android:inputType="number"
+            android:nextFocusDown="@+id/signupReceptionistActivity_sp_service"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#a36a37">
+        <TextView
+            android:id="@+id/signupReceptionistActivity_tv_service"
+            android:text="Service"
+            style="@style/LOGTVstyle"/>
+        <!--    <EditText-->
+        <!--        android:id="@+id/signupReceptionistActivity_et_service"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:ems="10"-->
+        <!--        android:inputType="text" />-->
+
+        <Spinner
+            android:id="@+id/signupReceptionistActivity_sp_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/service_type" />
+    </LinearLayout>
+
+
+    <Button
+        style="@style/Bstyle"
+        android:onClick="login"
+        android:text="@string/signup"
+        app:cornerRadius="90dp" />
+
+    <ProgressBar
+        android:id="@+id/signupCustomerActivity_pb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="gone"/>
+
+</LinearLayout>

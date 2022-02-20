@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupCustomerActivity"
+    android:columnCount="2"
+    android:padding="13dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    style="@style/LLstyle">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_name"
+        style="@style/LOGTVstyle"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_name"
+        style="@style/LOGETstyle"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_Address"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_Address"
+        style="@style/LOGTVstyle"
+        android:text="@string/address" />
+
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_Address"
+        style="@style/LOGETstyle"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_phone"
+        style="@style/LOGTVstyle"
+        android:text="@string/phone" />
+
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_phone"
+        style="@style/LOGETstyle"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_email"
+        style="@style/LOGTVstyle"
+        android:text="@string/email"/>
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_email"
+        style="@style/LOGETstyle"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_username"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_username"
+        style="@style/LOGTVstyle"
+        android:text="@string/username"/>
+
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_username"
+        style="@style/LOGETstyle"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_password"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/signupCustomerActivity_tv_password"
+        style="@style/LOGTVstyle"
+        android:text="@string/password"/>
+
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_password"
+        style="@style/LOGETstyle"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/signupCustomerActivity_et_repeatPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#a36a37"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupCustomerActivity_tv_repeatPassword"
+            style="@style/LOGTVstyle"
+            android:text="@string/repeatPwd"
+            android:textSize="15sp" />
+    <EditText
+        android:id="@+id/signupCustomerActivity_et_repeatPassword"
+        style="@style/LOGETstyle"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/Bstyle"
+        android:layout_marginTop="40dp"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:onClick="login"
+        android:text="@string/signup"
+        app:cornerRadius="90dp" />
+
+    <ProgressBar
+        android:id="@+id/signupCustomerActivity_pb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">AMA Hotel</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="repeatPwd">Repeat Password</string>
+    <string name="signup">Sign up</string>
+    <string name="login">Login</string>
+    <string name="noAccount">If you don\'t have an account, press below button to sign in</string>
+    <string name="sweet">Sweet</string>
+    <string name="room">Room</string>
+    <string name="Suite">Suite</string>
+    <string name="SuitePictures">Suite Pictures</string>
+    <string name="suiteInformation">Suite Information: </string>
+    <string name="bed">1_ Two Beds</string>
+    <string name="roomBed">2_ Two Rooms Minimum</string>
+    <string name="end_date">End Date</string>
+    <string name="start_date">Start Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="reserve">Reserve</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="edit">Edit</string>
+    <string name="remember_me">Remember me</string>
+    <string name="suite">Suite</string>
+    <string name="order">Order</string>
+    <string name="order_type">Order Type</string>
+    <string name="room_id">Room ID</string>
+    <string name="done">Done</string>
+    <string name="service">Service</string>
+    <string name="order_description">Order Description</string>
+    <string name="sent">Sent</string>
+    <string name="salary">Salary</string>
+    <string name="hour_work">Hour Work</string>
+    <string name="receptionist_id">Receptionist ID</string>
+    <string name="receptionist_name">Receptionist Name</string>
+    <string name="receptionist_com">....\@receptionist.com</string>
+    <string name="receptionist">receptionist_....</string>
+    <string name="success">Success</string>
+    <string name="ok">OK</string>
+    <string name="convert_from">Convert From</string>
+    <string name="convert_to">Convert To</string>
+    <string name="convert">Convert</string>
+    <string name="amount_to_convert">Amount To Convert</string>
+    <string name="conversation_rate">Conversation Rate</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="customer_profile">Customer Profile</string>
+    <string name="favorites">Favorites</string>
+    <string name="hotel_information_title">Hotel Information</string>
+    <string name="hotel_information">Start at 2000, and contain 50 rooms, and 10 suites</string>
+    <string name="my_rooms">My Rooms</string>
+    <string name="rooms_reserve">Rooms Reserve</string>
+    <string name="select_country">Select Country</string>
+
+    <string-array name="order_types">
+        <item>Food</item>
+        <item>Mechanical Maintenance</item>
+    </string-array>
+
+    <string-array name="service_type">
+        <item>Room Service</item>
+        <item>Receptionist</item>
+    </string-array>
+
+    <string-array name="filter_type">
+        <item>Rating</item>
+        <item>Person</item>
+        <item>Cost</item>
+    </string-array>
+
+    <string-array name="admin_filter_type">
+        <item>Rating</item>
+        <item>Person</item>
+        <item>Cost</item>
+        <item>Reserved</item>
+        <item>Not Reserved</item>
+    </string-array>
+
+    <string-array name="admin_filter_reserved">
+        <item>Reserved</item>
+        <item>Not Reserved</item>
+    </string-array>
+
+</resources>
